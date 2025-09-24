@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Nepal Car Rental</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .scroll-smooth { scroll-behavior: smooth; }
+        .animate-fade-in { animation: fadeIn 0.6s ease-in; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="scroll-smooth">
+    <!-- Navbar (same as index.html) -->
+    <nav id="navbar" class="bg-white shadow-lg fixed w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-blue-600">
+                        <i class="fas fa-car mr-2"></i>Nepal Cars
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="flex items-center space-x-8">
+                        <a href="index.html" class="nav-link text-gray-700 hover:text-blue-600 transition-colors">Home</a>
+                        <a href="services.html" class="nav-link text-blue-600 font-semibold">Services</a>
+                        <a href="cars.html" class="nav-link text-gray-700 hover:text-blue-600 transition-colors">Cars</a>
+                        <a href="drivers.html" class="nav-link text-gray-700 hover:text-blue-600 transition-colors">Drivers</a>
+                        <a href="about.html" class="nav-link text-gray-700 hover:text-blue-600 transition-colors">About</a>
+                        <a href="contact.html" class="nav-link text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
+                        <a href="booking.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">Book Now</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-gray-700">Home</a>
+                <a href="services.html" class="block px-3 py-2 text-blue-600 font-semibold">Services</a>
+                <a href="cars.html" class="block px-3 py-2 text-gray-700">Cars</a>
+                <a href="drivers.html" class="block px-3 py-2 text-gray-700">Drivers</a>
+                <a href="about.html" class="block px-3 py-2 text-gray-700">About</a>
+                <a href="contact.html" class="block px-3 py-2 text-gray-700">Contact</a>
+                <a href="booking.html" class="block px-3 py-2 bg-blue-600 text-white rounded mx-3">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-gradient-to-r from-blue-600 to-purple-600 text-white pt-24 pb-16">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-4xl lg:text-5xl font-bold mb-4">Our Services</h1>
+            <p class="text-xl opacity-90 max-w-2xl mx-auto">Comprehensive transportation solutions tailored to meet all your travel needs across Nepal</p>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Daily Car Rental -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="https://images.pexels.com/photos/1266810/pexels-photo-1266810.jpeg" alt="Daily Car Rental" class="w-full h-48 object-cover">
+                    <div class="p-8">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-calendar-day text-2xl text-blue-600"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold">Daily Car Rental</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Flexible daily car rental services with competitive rates. Perfect for short trips, business meetings, or exploring the city at your own pace.</p>
+                        <ul class="text-gray-600 space-y-2 mb-6">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Starting from NPR 3,000 per day</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Fuel included options available</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Free driver service</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Flexible pickup/drop-off</li>
+                        </ul>
+                        <a href="booking.html" class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors">
+                            Book Now <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Airport Transfer -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="https://images.pexels.com/photos/723240/pexels-photo-723240.jpeg" alt="Airport Transfer" class="w-full h-48 object-cover">
+                    <div class="p-8">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-plane text-2xl text-green-600"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold">Airport Transfer</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Reliable and punctual airport pickup and drop-off services. We monitor flight schedules to ensure timely arrivals and departures.</p>
+                        <ul class="text-gray-600 space-y-2 mb-6">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>24/7 availability</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Flight monitoring included</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Meet and greet service</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Fixed pricing, no hidden costs</li>
+                        </ul>
+                        <a href="booking.html" class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors">
+                            Book Now <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tourist Packages -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="https://images.pexels.com/photos/2577274/pexels-photo-2577274.jpeg" alt="Tourist Packages" class="w-full h-48 object-cover">
+                    <div class="p-8">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-orange-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-mountain text-2xl text-orange-600"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold">Tourist Packages</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Customized tour packages to explore Nepal's stunning attractions. From cultural sites to natural wonders, we'll take you everywhere.</p>
+                        <ul class="text-gray-600 space-y-2 mb-6">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Kathmandu Valley tours</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Pokhara and lakes exploration</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Chitwan National Park visits</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Custom itinerary planning</li>
+                        </ul>
+                        <a href="booking.html" class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors">
+                            Book Now <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Long Distance Travel -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="https://images.pexels.com/photos/1089455/pexels-photo-1089455.jpeg" alt="Long Distance Travel" class="w-full h-48 object-cover">
+                    <div class="p-8">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-route text-2xl text-purple-600"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold">Long Distance Travel</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Comfortable long-distance travel solutions for intercity journeys. Professional drivers ensure safe and comfortable rides.</p>
+                        <ul class="text-gray-600 space-y-2 mb-6">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>AC vehicles for comfort</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Experienced drivers</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Rest stops included</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Competitive long-distance rates</li>
+                        </ul>
+                        <a href="booking.html" class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors">
+                            Book Now <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Wedding & Events -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="https://images.pexels.com/photos/1415558/pexels-photo-1415558.jpeg" alt="Wedding Cars" class="w-full h-48 object-cover">
+                    <div class="p-8">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-pink-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-heart text-2xl text-pink-600"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold">Wedding & Events</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Make your special day memorable with our luxury wedding car rentals. Elegant vehicles for weddings and special occasions.</p>
+                        <ul class="text-gray-600 space-y-2 mb-6">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Luxury and premium cars</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Decoration services available</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Professional chauffeurs</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Special event packages</li>
+                        </ul>
+                        <a href="booking.html" class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors">
+                            Book Now <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Corporate Services -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg" alt="Corporate Services" class="w-full h-48 object-cover">
+                    <div class="p-8">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-briefcase text-2xl text-indigo-600"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold">Corporate Services</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Professional transportation solutions for businesses. From executive transfers to employee transportation services.</p>
+                        <ul class="text-gray-600 space-y-2 mb-6">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Executive car services</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Monthly corporate packages</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Conference and meeting transfers</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Bulk booking discounts</li>
+                        </ul>
+                        <a href="booking.html" class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors">
+                            Book Now <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Features -->
+    <section class="bg-gray-100 py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">Why Our Services Stand Out</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We go above and beyond to ensure your transportation experience is exceptional</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shield-alt text-3xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Fully Insured</h3>
+                    <p class="text-gray-600">All our vehicles are comprehensively insured for your peace of mind</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-tools text-3xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Well Maintained</h3>
+                    <p class="text-gray-600">Regular maintenance ensures reliable and safe transportation</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-orange-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-headset text-3xl text-orange-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">24/7 Support</h3>
+                    <p class="text-gray-600">Round-the-clock customer support for any assistance you need</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-blue-600 text-white py-16">
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <h2 class="text-3xl lg:text-4xl font-bold mb-4">Ready to Experience Our Services?</h2>
+            <p class="text-xl mb-8 opacity-90">Choose the service that fits your needs and book your ride today</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="booking.html" class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold transition-colors">
+                    <i class="fas fa-calendar-alt mr-2"></i>Book a Service
+                </a>
+                <a href="contact.html" class="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-lg font-semibold transition-colors">
+                    <i class="fas fa-phone mr-2"></i>Get Quote
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-car text-2xl text-blue-400 mr-2"></i>
+                        <h3 class="text-2xl font-bold">Nepal Cars</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">Your trusted partner for premium car rental and transportation services across Nepal.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-blue-400"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-blue-400"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-blue-400"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white">Home</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-white">Services</a></li>
+                        <li><a href="cars.html" class="text-gray-300 hover:text-white">Our Fleet</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-white">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white">Daily Rental</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Airport Transfer</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Tourist Packages</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Long Distance</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Wedding Cars</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>Kathmandu, Nepal</li>
+                        <li><i class="fas fa-phone mr-2"></i>+977-1-234-5678</li>
+                        <li><i class="fas fa-envelope mr-2"></i>info@nepalcars.com</li>
+                        <li><i class="fas fa-clock mr-2"></i>24/7 Available</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-gray-600 my-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-300">&copy; 2025 Nepal Cars. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="terms.html" class="text-gray-300 hover:text-white">Terms of Service</a>
+                    <a href="privacy.html" class="text-gray-300 hover:text-white">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

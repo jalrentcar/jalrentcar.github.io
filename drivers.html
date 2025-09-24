@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Drivers - Nepal Car Rental</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .scroll-smooth { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="scroll-smooth bg-gray-50">
+    <!-- Navbar -->
+    <nav id="navbar" class="bg-white shadow-lg fixed w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-blue-600">
+                        <i class="fas fa-car mr-2"></i>Nepal Cars
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="flex items-center space-x-8">
+                        <a href="index.html" class="nav-link text-gray-700 hover:text-blue-600 transition-colors">Home</a>
+                        <a href="services.html" class="nav-link text-gray-700 hover:text-blue-600 transition-colors">Services</a>
+                        <a href="cars.html" class="nav-link text-gray-700 hover:text-blue-600 transition-colors">Cars</a>
+                        <a href="drivers.html" class="nav-link text-blue-600 font-semibold">Drivers</a>
+                        <a href="about.html" class="nav-link text-gray-700 hover:text-blue-600 transition-colors">About</a>
+                        <a href="contact.html" class="nav-link text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
+                        <a href="booking.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">Book Now</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-gray-700">Home</a>
+                <a href="services.html" class="block px-3 py-2 text-gray-700">Services</a>
+                <a href="cars.html" class="block px-3 py-2 text-gray-700">Cars</a>
+                <a href="drivers.html" class="block px-3 py-2 text-blue-600 font-semibold">Drivers</a>
+                <a href="about.html" class="block px-3 py-2 text-gray-700">About</a>
+                <a href="contact.html" class="block px-3 py-2 text-gray-700">Contact</a>
+                <a href="booking.html" class="block px-3 py-2 bg-blue-600 text-white rounded mx-3">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-gradient-to-r from-blue-600 to-purple-600 text-white pt-24 pb-16">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-4xl lg:text-5xl font-bold mb-4">Professional Drivers</h1>
+            <p class="text-xl opacity-90 max-w-2xl mx-auto">Meet our experienced and courteous drivers who will ensure your safe and comfortable journey across Nepal</p>
+        </div>
+    </section>
+
+    <!-- Drivers Grid -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div id="drivers-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Drivers will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Driver Benefits -->
+    <section class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">Why Our Drivers Are the Best</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We carefully select and train our drivers to provide exceptional service</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-id-card text-3xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Licensed & Certified</h3>
+                    <p class="text-gray-600">All drivers hold valid licenses and certifications</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-road text-3xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Local Knowledge</h3>
+                    <p class="text-gray-600">Extensive knowledge of Nepal's roads and attractions</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-orange-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-language text-3xl text-orange-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Multilingual</h3>
+                    <p class="text-gray-600">Speak multiple languages for better communication</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-handshake text-3xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Courteous Service</h3>
+                    <p class="text-gray-600">Friendly and professional service at all times</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Driver Training -->
+    <section class="bg-gray-100 py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-6">Rigorous Training Program</h2>
+                    <p class="text-gray-600 mb-6">Our drivers undergo comprehensive training to ensure they meet our high standards of service and safety.</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold">Safety Training</h4>
+                                <p class="text-gray-600">Defensive driving and emergency response procedures</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold">Customer Service</h4>
+                                <p class="text-gray-600">Professional communication and hospitality skills</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold">Route Knowledge</h4>
+                                <p class="text-gray-600">Detailed knowledge of Nepal's roads and tourist destinations</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold">Vehicle Maintenance</h4>
+                                <p class="text-gray-600">Basic maintenance and troubleshooting skills</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg" alt="Driver Training" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-blue-600 text-white py-16">
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <h2 class="text-3xl lg:text-4xl font-bold mb-4">Need a Professional Driver?</h2>
+            <p class="text-xl mb-8 opacity-90">Book one of our experienced drivers for your next journey in Nepal</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="booking.html" class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold transition-colors">
+                    <i class="fas fa-calendar-alt mr-2"></i>Book a Driver
+                </a>
+                <a href="contact.html" class="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-lg font-semibold transition-colors">
+                    <i class="fas fa-phone mr-2"></i>Learn More
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-car text-2xl text-blue-400 mr-2"></i>
+                        <h3 class="text-2xl font-bold">Nepal Cars</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">Your trusted partner for premium car rental and transportation services across Nepal.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-blue-400"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-blue-400"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-blue-400"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white">Home</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-white">Services</a></li>
+                        <li><a href="cars.html" class="text-gray-300 hover:text-white">Our Fleet</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-white">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white">Daily Rental</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Airport Transfer</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Tourist Packages</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Long Distance</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Wedding Cars</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>Kathmandu, Nepal</li>
+                        <li><i class="fas fa-phone mr-2"></i>+977-1-234-5678</li>
+                        <li><i class="fas fa-envelope mr-2"></i>info@nepalcars.com</li>
+                        <li><i class="fas fa-clock mr-2"></i>24/7 Available</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-gray-600 my-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-300">&copy; 2025 Nepal Cars. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="terms.html" class="text-gray-300 hover:text-white">Terms of Service</a>
+                    <a href="privacy.html" class="text-gray-300 hover:text-white">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

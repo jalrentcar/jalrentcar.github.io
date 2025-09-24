@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Fleet - Nepal Car Rental</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .scroll-smooth { scroll-behavior: smooth; }
+        .car-card:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="scroll-smooth bg-gray-50">
+    <!-- Navbar -->
+    <nav id="navbar" class="bg-white shadow-lg fixed w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-blue-600">
+                        <i class="fas fa-car mr-2"></i>Nepal Cars
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="flex items-center space-x-8">
+                        <a href="index.html" class="nav-link text-gray-700 hover:text-blue-600 transition-colors">Home</a>
+                        <a href="services.html" class="nav-link text-gray-700 hover:text-blue-600 transition-colors">Services</a>
+                        <a href="cars.html" class="nav-link text-blue-600 font-semibold">Cars</a>
+                        <a href="drivers.html" class="nav-link text-gray-700 hover:text-blue-600 transition-colors">Drivers</a>
+                        <a href="about.html" class="nav-link text-gray-700 hover:text-blue-600 transition-colors">About</a>
+                        <a href="contact.html" class="nav-link text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
+                        <a href="booking.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">Book Now</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-gray-700">Home</a>
+                <a href="services.html" class="block px-3 py-2 text-gray-700">Services</a>
+                <a href="cars.html" class="block px-3 py-2 text-blue-600 font-semibold">Cars</a>
+                <a href="drivers.html" class="block px-3 py-2 text-gray-700">Drivers</a>
+                <a href="about.html" class="block px-3 py-2 text-gray-700">About</a>
+                <a href="contact.html" class="block px-3 py-2 text-gray-700">Contact</a>
+                <a href="booking.html" class="block px-3 py-2 bg-blue-600 text-white rounded mx-3">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-gradient-to-r from-blue-600 to-purple-600 text-white pt-24 pb-16">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-4xl lg:text-5xl font-bold mb-4">Our Premium Fleet</h1>
+            <p class="text-xl opacity-90 max-w-2xl mx-auto">Choose from our diverse collection of well-maintained vehicles, perfect for every occasion and budget</p>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="py-8">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-wrap justify-center gap-4 mb-8">
+                <button class="filter-btn bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold transition-colors" data-filter="all">All Cars</button>
+                <button class="filter-btn bg-gray-200 text-gray-700 px-6 py-2 rounded-lg font-semibold transition-colors hover:bg-gray-300" data-filter="sedan">Sedan</button>
+                <button class="filter-btn bg-gray-200 text-gray-700 px-6 py-2 rounded-lg font-semibold transition-colors hover:bg-gray-300" data-filter="suv">SUV</button>
+                <button class="filter-btn bg-gray-200 text-gray-700 px-6 py-2 rounded-lg font-semibold transition-colors hover:bg-gray-300" data-filter="hatchback">Hatchback</button>
+                <button class="filter-btn bg-gray-200 text-gray-700 px-6 py-2 rounded-lg font-semibold transition-colors hover:bg-gray-300" data-filter="luxury">Luxury</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cars Grid -->
+    <section class="pb-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div id="cars-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Cars will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Our Cars -->
+    <section class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">Why Our Fleet Stands Out</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Every vehicle in our fleet is carefully selected and maintained to the highest standards</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-tools text-3xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Regular Maintenance</h3>
+                    <p class="text-gray-600">All vehicles undergo regular maintenance checks to ensure optimal performance and safety</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shield-alt text-3xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Fully Insured</h3>
+                    <p class="text-gray-600">Comprehensive insurance coverage for complete peace of mind during your journey</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-orange-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-award text-3xl text-orange-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Quality Guaranteed</h3>
+                    <p class="text-gray-600">Only premium vehicles from trusted brands make it to our fleet</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-blue-600 text-white py-16">
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <h2 class="text-3xl lg:text-4xl font-bold mb-4">Ready to Hit the Road?</h2>
+            <p class="text-xl mb-8 opacity-90">Book your preferred vehicle today and start your Nepal adventure</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="booking.html" class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold transition-colors">
+                    <i class="fas fa-calendar-alt mr-2"></i>Book a Car
+                </a>
+                <a href="contact.html" class="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-lg font-semibold transition-colors">
+                    <i class="fas fa-phone mr-2"></i>Need Help?
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-car text-2xl text-blue-400 mr-2"></i>
+                        <h3 class="text-2xl font-bold">Nepal Cars</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">Your trusted partner for premium car rental and transportation services across Nepal.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-blue-400"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-blue-400"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-blue-400"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white">Home</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-white">Services</a></li>
+                        <li><a href="cars.html" class="text-gray-300 hover:text-white">Our Fleet</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-white">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white">Daily Rental</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Airport Transfer</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Tourist Packages</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Long Distance</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Wedding Cars</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>Kathmandu, Nepal</li>
+                        <li><i class="fas fa-phone mr-2"></i>+977-1-234-5678</li>
+                        <li><i class="fas fa-envelope mr-2"></i>info@nepalcars.com</li>
+                        <li><i class="fas fa-clock mr-2"></i>24/7 Available</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-gray-600 my-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-300">&copy; 2025 Nepal Cars. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="terms.html" class="text-gray-300 hover:text-white">Terms of Service</a>
+                    <a href="privacy.html" class="text-gray-300 hover:text-white">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
