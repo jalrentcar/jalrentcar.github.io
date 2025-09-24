@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Nepal Car Rental</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .scroll-smooth { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="scroll-smooth">
+    <!-- Navbar -->
+    <nav id="navbar" class="bg-white shadow-lg fixed w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-blue-600">
+                        <i class="fas fa-car mr-2"></i>Nepal Cars
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="flex items-center space-x-8">
+                        <a href="index.html" class="nav-link text-gray-700 hover:text-blue-600 transition-colors">Home</a>
+                        <a href="services.html" class="nav-link text-gray-700 hover:text-blue-600 transition-colors">Services</a>
+                        <a href="cars.html" class="nav-link text-gray-700 hover:text-blue-600 transition-colors">Cars</a>
+                        <a href="drivers.html" class="nav-link text-gray-700 hover:text-blue-600 transition-colors">Drivers</a>
+                        <a href="about.html" class="nav-link text-blue-600 font-semibold">About</a>
+                        <a href="contact.html" class="nav-link text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
+                        <a href="booking.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">Book Now</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-gray-700">Home</a>
+                <a href="services.html" class="block px-3 py-2 text-gray-700">Services</a>
+                <a href="cars.html" class="block px-3 py-2 text-gray-700">Cars</a>
+                <a href="drivers.html" class="block px-3 py-2 text-gray-700">Drivers</a>
+                <a href="about.html" class="block px-3 py-2 text-blue-600 font-semibold">About</a>
+                <a href="contact.html" class="block px-3 py-2 text-gray-700">Contact</a>
+                <a href="booking.html" class="block px-3 py-2 bg-blue-600 text-white rounded mx-3">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-gradient-to-r from-blue-600 to-purple-600 text-white pt-24 pb-16">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-4xl lg:text-5xl font-bold mb-4">About Nepal Cars</h1>
+            <p class="text-xl opacity-90 max-w-2xl mx-auto">Your trusted partner for premium transportation services across the beautiful landscapes of Nepal</p>
+        </div>
+    </section>
+
+    <!-- Company Story -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-6">Our Story</h2>
+                    <p class="text-gray-600 mb-6">Founded in 2015, Nepal Cars began with a simple mission: to provide safe, reliable, and comfortable transportation services for both locals and tourists exploring Nepal. What started as a small family business with just three vehicles has grown into one of Nepal's most trusted car rental companies.</p>
+                    <p class="text-gray-600 mb-6">Over the years, we have served thousands of satisfied customers, from adventure seekers exploring the Himalayas to business professionals needing reliable urban transportation. Our commitment to excellence and customer satisfaction has been the driving force behind our growth.</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <div class="text-center sm:text-left">
+                            <div class="text-3xl font-bold text-blue-600">10+</div>
+                            <div class="text-gray-600">Years of Service</div>
+                        </div>
+                        <div class="text-center sm:text-left">
+                            <div class="text-3xl font-bold text-blue-600">50+</div>
+                            <div class="text-gray-600">Vehicles</div>
+                        </div>
+                        <div class="text-center sm:text-left">
+                            <div class="text-3xl font-bold text-blue-600">10,000+</div>
+                            <div class="text-gray-600">Happy Customers</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://images.pexels.com/photos/3729464/pexels-photo-3729464.jpeg" alt="Nepal Mountains" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="bg-gray-100 py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="text-center mb-6">
+                        <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-bullseye text-3xl text-blue-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800">Our Mission</h3>
+                    </div>
+                    <p class="text-gray-600 text-center">To provide exceptional transportation services that enable our customers to explore Nepal safely, comfortably, and affordably while creating memorable experiences that last a lifetime.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="text-center mb-6">
+                        <div class="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-eye text-3xl text-green-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800">Our Vision</h3>
+                    </div>
+                    <p class="text-gray-600 text-center">To become Nepal's leading transportation service provider, recognized for our commitment to safety, reliability, and customer satisfaction while contributing to the growth of Nepal's tourism industry.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">Our Core Values</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">These values guide everything we do and shape our relationships with customers, partners, and communities</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shield-alt text-3xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Safety First</h3>
+                    <p class="text-gray-600">Safety is our top priority. We maintain our vehicles to the highest standards and employ experienced drivers.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-handshake text-3xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Trust & Reliability</h3>
+                    <p class="text-gray-600">We build lasting relationships through consistent, dependable service and transparent business practices.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-orange-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-star text-3xl text-orange-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Excellence</h3>
+                    <p class="text-gray-600">We strive for excellence in every aspect of our service, from vehicle quality to customer support.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-heart text-3xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Customer Care</h3>
+                    <p class="text-gray-600">Our customers are at the heart of everything we do. We listen, care, and go the extra mile.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">Meet Our Team</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">The dedicated professionals who make Nepal Cars the trusted choice for transportation services</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <img src="https://images.pexels.com/photos/1674752/pexels-photo-1674752.jpeg" alt="Rajesh Shrestha" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold mb-2">Rajesh Shrestha</h3>
+                    <p class="text-blue-600 mb-2">Founder & CEO</p>
+                    <p class="text-gray-600 text-sm">With over 15 years in the transportation industry, Rajesh founded Nepal Cars with a vision to transform how people travel in Nepal.</p>
+                </div>
+                <div class="text-center">
+                    <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg" alt="Sita Gurung" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold mb-2">Sita Gurung</h3>
+                    <p class="text-blue-600 mb-2">Operations Manager</p>
+                    <p class="text-gray-600 text-sm">Sita ensures our operations run smoothly, managing fleet maintenance, driver scheduling, and customer service excellence.</p>
+                </div>
+                <div class="text-center">
+                    <img src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg" alt="Amit Tamang" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold mb-2">Amit Tamang</h3>
+                    <p class="text-blue-600 mb-2">Customer Relations</p>
+                    <p class="text-gray-600 text-sm">Amit leads our customer service team, ensuring every client receives personalized attention and exceptional service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements -->
+    <section class="bg-gray-100 py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">Our Achievements</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Recognition and milestones that reflect our commitment to excellence</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <i class="fas fa-trophy text-4xl text-yellow-600 mb-4"></i>
+                    <h3 class="text-lg font-bold mb-2">Best Car Rental 2023</h3>
+                    <p class="text-gray-600 text-sm">Nepal Tourism Board Excellence Award</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <i class="fas fa-certificate text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-lg font-bold mb-2">ISO Certified</h3>
+                    <p class="text-gray-600 text-sm">Quality Management System Certified</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <i class="fas fa-medal text-4xl text-green-600 mb-4"></i>
+                    <h3 class="text-lg font-bold mb-2">Safety Excellence</h3>
+                    <p class="text-gray-600 text-sm">Zero major accidents in 5 years</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <i class="fas fa-users text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="text-lg font-bold mb-2">Customer Choice</h3>
+                    <p class="text-gray-600 text-sm">98% customer satisfaction rate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-blue-600 text-white py-16">
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <h2 class="text-3xl lg:text-4xl font-bold mb-4">Ready to Travel with Nepal Cars?</h2>
+            <p class="text-xl mb-8 opacity-90">Join thousands of satisfied customers who trust us for their transportation needs</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="booking.html" class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold transition-colors">
+                    <i class="fas fa-calendar-alt mr-2"></i>Book Your Ride
+                </a>
+                <a href="contact.html" class="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-lg font-semibold transition-colors">
+                    <i class="fas fa-phone mr-2"></i>Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-car text-2xl text-blue-400 mr-2"></i>
+                        <h3 class="text-2xl font-bold">Nepal Cars</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">Your trusted partner for premium car rental and transportation services across Nepal.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-blue-400"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-blue-400"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-blue-400"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white">Home</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-white">Services</a></li>
+                        <li><a href="cars.html" class="text-gray-300 hover:text-white">Our Fleet</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-white">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white">Daily Rental</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Airport Transfer</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Tourist Packages</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Long Distance</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Wedding Cars</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>Kathmandu, Nepal</li>
+                        <li><i class="fas fa-phone mr-2"></i>+977-1-234-5678</li>
+                        <li><i class="fas fa-envelope mr-2"></i>info@nepalcars.com</li>
+                        <li><i class="fas fa-clock mr-2"></i>24/7 Available</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-gray-600 my-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-300">&copy; 2025 Nepal Cars. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="terms.html" class="text-gray-300 hover:text-white">Terms of Service</a>
+                    <a href="privacy.html" class="text-gray-300 hover:text-white">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
