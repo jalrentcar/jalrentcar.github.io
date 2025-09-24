@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "name": "Ram Bahadur Thapa",
+    "photo": "https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg",
+    "experience": 8,
+    "languages": ["Nepali", "English", "Hindi"],
+    "specialties": ["Mountain Roads", "Tourist Guide"],
+    "rating": 4.9,
+    "available": true,
+    "license": "DL-001-2015",
+    "phone": "+977-9841234567",
+    "description": "Experienced driver with extensive knowledge of Nepal's tourist destinations."
+  },
+  {
+    "id": 2,
+    "name": "Sita Maya Gurung",
+    "photo": "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg",
+    "experience": 6,
+    "languages": ["Nepali", "English"],
+    "specialties": ["City Driving", "Airport Transfers"],
+    "rating": 4.8,
+    "available": true,
+    "license": "DL-002-2017",
+    "phone": "+977-9841234568",
+    "description": "Professional female driver specializing in safe city transportation."
+  },
+  {
+    "id": 3,
+    "name": "Bikash Shrestha",
+    "photo": "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg",
+    "experience": 10,
+    "languages": ["Nepali", "English", "Japanese"],
+    "specialties": ["Long Distance", "International Guests"],
+    "rating": 4.7,
+    "available": true,
+    "license": "DL-003-2013",
+    "phone": "+977-9841234569",
+    "description": "Multilingual driver with decade of experience serving international tourists."
+  },
+  {
+    "id": 4,
+    "name": "Prakash Tamang",
+    "photo": "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg",
+    "experience": 7,
+    "languages": ["Nepali", "English"],
+    "specialties": ["Wedding Events", "Luxury Cars"],
+    "rating": 4.6,
+    "available": false,
+    "license": "DL-004-2016",
+    "phone": "+977-9841234570",
+    "description": "Specialist in luxury vehicle handling and special occasion services."
+  },
+  {
+    "id": 5,
+    "name": "Deepak Rai",
+    "photo": "https://images.pexels.com/photos/1674752/pexels-photo-1674752.jpeg",
+    "experience": 5,
+    "languages": ["Nepali", "English", "Hindi"],
+    "specialties": ["Adventure Tours", "Off-road Driving"],
+    "rating": 4.5,
+    "available": true,
+    "license": "DL-005-2018",
+    "phone": "+977-9841234571",
+    "description": "Adventure specialist perfect for off-road and trekking base camp drives."
+  },
+  {
+    "id": 6,
+    "name": "Sunita Poudel",
+    "photo": "https://images.pexels.com/photos/1542085/pexels-photo-1542085.jpeg",
+    "experience": 4,
+    "languages": ["Nepali", "English"],
+    "specialties": ["Corporate Services", "Executive Transport"],
+    "rating": 4.7,
+    "available": true,
+    "license": "DL-006-2019",
+    "phone": "+977-9841234572",
+    "description": "Professional driver specializing in corporate and executive transportation."
+  }
+]

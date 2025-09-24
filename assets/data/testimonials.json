@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Johnson",
+    "country": "USA",
+    "photo": "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg",
+    "rating": 5,
+    "comment": "Excellent service! The driver was punctual, professional, and very knowledgeable about local attractions. Made our Nepal trip unforgettable.",
+    "service": "Tourist Package",
+    "date": "2024-11-15"
+  },
+  {
+    "id": 2,
+    "name": "David Chen",
+    "country": "Singapore",
+    "photo": "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg",
+    "rating": 5,
+    "comment": "Highly recommend Nepal Cars! Clean vehicles, fair pricing, and exceptional customer service. Will definitely use again.",
+    "service": "Airport Transfer",
+    "date": "2024-11-20"
+  },
+  {
+    "id": 3,
+    "name": "Priya Sharma",
+    "country": "India",
+    "photo": "https://images.pexels.com/photos/1542085/pexels-photo-1542085.jpeg",
+    "rating": 4,
+    "comment": "Great experience with the daily rental service. The car was well-maintained and the driver was very helpful throughout our journey.",
+    "service": "Daily Rental",
+    "date": "2024-12-01"
+  },
+  {
+    "id": 4,
+    "name": "Michael Thompson",
+    "country": "UK",
+    "photo": "https://images.pexels.com/photos/1674752/pexels-photo-1674752.jpeg",
+    "rating": 5,
+    "comment": "Outstanding service from booking to drop-off. The team went above and beyond to ensure our comfort and safety during our Nepal adventure.",
+    "service": "Long Distance",
+    "date": "2024-12-05"
+  },
+  {
+    "id": 5,
+    "name": "Lisa Wong",
+    "country": "Canada",
+    "photo": "https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg",
+    "rating": 5,
+    "comment": "Perfect for our wedding! The luxury car was beautifully decorated and the chauffeur was professional. Thank you for making our day special!",
+    "service": "Wedding Package",
+    "date": "2024-12-10"
+  },
+  {
+    "id": 6,
+    "name": "Robert Fischer",
+    "country": "Germany",
+    "photo": "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg",
+    "rating": 4,
+    "comment": "Reliable and efficient service. The driver spoke excellent English and provided great insights about Nepalese culture and history.",
+    "service": "Corporate Service",
+    "date": "2024-12-12"
+  }
+]
